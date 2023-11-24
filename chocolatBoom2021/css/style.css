@@ -1,0 +1,118 @@
+body{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #1b8b8f;
+    
+}
+
+
+h1, h2, h3{
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4em;
+    color:white;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+header{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       width:100vw;
+
+        }
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbox{
+    display: block;
+    width: 100%;
+    background-color: #5d3e2b;
+}
+nav{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-evenly;
+    
+  
+}
+    
+
+nav >a{
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding:1rem;
+    font-size: 1.6em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    }
+nav>a:hover{
+    transition: all 0.6s ease;
+    background-color: #a79189;
+
+}
+
+aside{
+    background-color: white;
+    padding: 1em;
+    text-align: justify;
+    line-height: 1.5em;
+}
+.roundEdge{
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #5d3e2b;
+    border-radius:10px;
+    padding: 1rem;
+}
+.mainPhoto{
+    border-radius:10px;
+    border:0;
+    width:100%;
+}
+
+section{
+    margin:1rem;
+    text-align: justify;
+}
+
+@media screen and (max-width: 560px) {
+    nav{
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: space-evenly;
+    }   
+    
+    #container{
+        width:80%;
+    }
+   
+    aside {
+        display: none;
+        
+    }
+    
+}
+
+@media screen and (min-width: 961px) {
+    .container{
+        display: flex;
+    }
+    section{
+    width: 70%;
+    }  
+    aside{
+     width: 30%;    
+    }
+
+@media screen and (min-width: 561px) and (max-width: 960px)  {
+    .container{
+        display:block;
+    }
+}
